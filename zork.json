@@ -1,0 +1,557 @@
+{
+  "verbs": [
+    {
+      "v": "EXITS",
+      "map": "EXITS"
+    },
+    {
+      "v": "QUIT",
+      "map": "QUIT"
+    },
+    {
+      "v": "Q",
+      "map": "QUIT"
+    },
+    {
+      "v": "GET ME OUT OF HERE!",
+      "map": "QUIT"
+    },
+    {
+      "v": "NORTH",
+      "map": "NORTH"
+    },
+    {
+      "v": "N",
+      "map": "NORTH"
+    },
+    {
+      "v": "SOUTH",
+      "map": "SOUTH"
+    },
+    {
+      "v": "S",
+      "map": "SOUTH"
+    },
+    {
+      "v": "EAST",
+      "map": "EAST"
+    },
+    {
+      "v": "E",
+      "map": "EAST"
+    },
+    {
+      "v": "WEST",
+      "map": "WEST"
+    },
+    {
+      "v": "W",
+      "map": "WEST"
+    },
+    {
+      "v": "NE",
+      "map": "NE"
+    },
+    {
+      "v": "NORTHEAST",
+      "map": "NE"
+    },
+    {
+      "v": "NW",
+      "map": "NW"
+    },
+    {
+      "v": "NORTHWEST",
+      "map": "NW"
+    },
+    {
+      "v": "SE",
+      "map": "SE"
+    },
+    {
+      "v": "SOUTHEAST",
+      "map": "SE"
+    },
+    {
+      "v": "SOUTHWEST",
+      "map": "SW"
+    },
+    {
+      "v": "UP",
+      "map": "UP"
+    },
+    {
+      "v": "U",
+      "map": "UP"
+    },
+    {
+      "v": "DOWN",
+      "map": "DOWN"
+    },
+    {
+      "v": "D",
+      "map": "DOWN"
+    },
+    {
+      "v": "ENTER",
+      "map": "ENTER"
+    },
+    {
+      "v": "OUT",
+      "map": "OUT"
+    },
+    {
+      "v": "EXIT",
+      "map": "EXIT"
+    },
+    {
+      "v": "LEAVE",
+      "map": "LEAVE"
+    },
+    {
+      "v": "LAND",
+      "map": "LAND"
+    },
+    {
+      "v": "#!#!#",
+      "map": "#!#!#"
+    },
+    {
+      "v": "LAUNC",
+      "map": "LAUNC"
+    },
+    {
+      "v": "CROSS",
+      "map": "CROSS"
+    },
+    {
+      "v": "TAKE",
+      "map": "TAKE"
+    },
+    {
+      "v": "GET",
+      "map": "TAKE"
+    }
+  ],
+  "rooms": {
+    "WHOUS": {
+      "name": "Indianapolis",
+      "desc": "You are in the capital city of Indiana!",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "NHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "SHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "FORE1",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "EHOUS",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "NHOUS": {
+      "name": "Kokomo",
+      "desc": "You are in the city of Kokomo, Indiana. A small pit stop on you journey.",
+      "exits": [
+        {
+          "verb": "WEST",
+          "target": "FORE1",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "EHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "FORE3",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "WHOUS",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "SHOUS": {
+      "name": "Bloomington",
+      "desc": "You are in Bloomington, Indiana. A college town full of vibrant people that are DEEP in the student debt crisis! Lucky you!",
+      "exits": [
+        {
+          "verb": "WEST",
+          "target": "WHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "EHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "FORE2",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "EHOUS": {
+      "name": "Muncie",
+      "desc": "This is the right armpit of Indianapolis. Full of insane people that believe Ball State Unviversity is the best school in Indiana.",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "NHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "SHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "CLEAR",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "WHOUS",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "FORE1": {
+      "name": "West Lafayette",
+      "desc": "This is the left arm pit of Indianapolis. Full of a bunch of hooligans that think they are better because they have engineers. Said Engineers have screwed up the city streets making a bunch of U-Turns!.",
+      "exits": [
+        {
+          "verb": "UP",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "FORE1",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "FORE2",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "FORE1",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "FORE2": {
+      "name": "Evansville",
+      "desc": "This is a larger city at the southern edge of Indiana.",
+      "exits": [
+        {
+          "verb": "UP",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "SHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "CLEAR",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "FORE4",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "FORE3": {
+      "name": "LaPorte",
+      "desc": "This is the Game Creator's home town. LaPorte, Indiana produces only one thing: Heroin Addicts. And I can say that because I lived there for 19 years. There are a couple portals around here so watch out.",
+      "exits": [
+        {
+          "verb": "UP",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "CLEAR",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "CLEAR",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NHOUS",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "FORE4": {
+      "name": "Louisville",
+      "desc": "This is the capital of Kentucky! I hear they make some good Baseball bats!",
+      "exits": [
+        {
+          "verb": "UP",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "CLTOP",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "FORE2",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "FORE5",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "FORE5": {
+      "name": "Nashville",
+      "desc": "This is Nashville, Tennesee. The home of country music... Yay.",
+      "exits": [
+        {
+          "verb": "UP",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "FORE4",
+          "condition": ""
+        },
+        {
+          "verb": "SE",
+          "target": "CLTOP",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "CLTOP",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "CLEAR": {
+      "name": "Cleveland",
+      "desc": "Welcome to Cleveland, Ohio. The football team is awful. Thats it.",
+      "exits": [
+        {
+          "verb": "SW",
+          "target": "EHOUS",
+          "condition": ""
+        },
+        {
+          "verb": "SE",
+          "target": "FORE5",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "MTROL",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "FORE3",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "CELLA",
+          "condition": ""
+        },
+        {
+          "verb": "DOWN",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "CELLA": {
+      "name": "Pittsburgh",
+      "desc": "Pittsburgh is far away from the South pole so I dont know how all these Penguins got here.",
+      "exits": [
+        {
+          "verb": "EAST",
+          "target": "MTROL",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "CHAS2",
+          "condition": ""
+        },
+        {
+          "verb": "UP",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "CLEAR",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "MTROL": {
+      "name": "New York City",
+      "desc": "This is New York City. Home of all the pizza points, musicals, and the accent from Taxi Driver.",
+      "exits": [
+        {
+          "verb": "WEST",
+          "target": "CELLA",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "PASS1",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "MAZE1",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "MAZE1": {
+      "name": "Washington DC",
+      "desc": "This is the Capital of the entire USA. Lots of buildings made of marble and lots of Hot Air coming from the Capitol Building. \r\nYOU HAVE WON CONGRATULATIONS",
+      "exits": [
+        {
+          "verb": "WEST",
+          "target": "CELLA",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "MTROL",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "MAZE2",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "MAZE2": {
+      "name": "Charolette",
+      "desc": "This is Charolette, North Carolina. It aint special.",
+      "exits": [
+        {
+          "verb": "SOUTH",
+          "target": "MAZE3",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "MAZE1",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "FORE5",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    }
+  }
+}
+    
