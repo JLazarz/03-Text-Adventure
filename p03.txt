@@ -1,0 +1,39 @@
+Name:Devarshi Bhadouria
+Date: 25/9
+Project: 03-Text-Adventure
+Peer's repository:  https://github.com/JLazarz/03-Text-adventure.git
+
+
+
+What is something you learned by reviewing your peer's project?
+I learned how to be creative when thinking about what story to create. I liked the idea of finding DC very much.
+
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+The game engine had a appropriate introduction relevant to the game inside the json file. I think I would apply that in my project
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+You can have more places ? Try a different countr? Or maybe Space ? ( Think Bigger)
+ 
+
+What could have been clearer or better commented?
+Everything was very clear.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+I understood the code completely.
+ 
+
+Does the repository contain an appropriate LICENSE?
+The repository does contain an appropriate LICENSE
+
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+He could have told what he did and explain it briefly
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+Ohio - The football team is indeed awful !
